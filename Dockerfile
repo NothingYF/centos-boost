@@ -6,6 +6,8 @@ RUN cd /boost_1_59_0 ; \
 	sh ./bootstrap.sh; \
 	./b2; \
 	./b2 install --prefix=/usr/local; \
-	yum clean all;
+	yum clean all;\
+	rm -rf /boost_1_59_0;
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/usr/sbin/init"]
