@@ -9,5 +9,6 @@ RUN cd /boost_1_59_0 ; \
 	yum clean all;\
 	rm -rf /boost_1_59_0;
 
+ADD cpp-netlib-0.11.2-final.tar.bz2 /
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/usr/sbin/init"]
