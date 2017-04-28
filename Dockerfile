@@ -6,8 +6,7 @@ RUN cd /boost_1_59_0 ; \
 	sh ./bootstrap.sh; \
 	./b2; \
 	./b2 install --prefix=/usr/local; \
-	yum clean all;\
-	rm -rf /boost_1_59_0;
+	yum clean all;
 
 ADD cpp-netlib-0.11.2-final.tar.bz2 /
 RUN mkdir cpp-netlib-build
